@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-purple: #BA55D3;
+    --electric-green: #00FF7F;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Gradient blobs */
+.gradient-blob {
+  @apply fixed opacity-15 -z-10 pointer-events-none;
+  filter: blur(clamp(40px, 8vw, 80px));
+}
+
+.gradient-blob.top-left {
+  width: min(600px, 80vw);
+  height: min(600px, 80vw);
+  background: radial-gradient(circle at center, var(--neon-purple), transparent 70%);
+  top: min(-200px, -20vw);
+  left: min(-200px, -20vw);
+}
+
+.gradient-blob.bottom-right {
+  width: min(800px, 90vw);
+  height: min(800px, 90vw);
+  background: radial-gradient(circle at center, var(--electric-green), transparent 70%);
+  bottom: min(-300px, -30vw);
+  right: min(-300px, -30vw);
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+  width: clamp(6px, 1vw, 8px);
+  background-color: #1a1a1a; /* Equivalent to bg-neutral-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--neon-purple), var(--electric-green));
+  border-radius: 10px; /* Equivalent to Tailwind rounded */
+}

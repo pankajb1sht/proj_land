@@ -1,0 +1,30 @@
+{
+  "short_name": "MEMECOIN",
+  "name": "MEMECOIN - To The Moon",
+  "icons": [
+    {
+      "src": "snyrn-logo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "snyrn-logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "snyrn-logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0A0612",
+  "orientation": "portrait",
+  "description": "MEMECOIN - Solana's first raccoon-powered meme coin. Join the galactic meme revolution!",
+  "dir": "ltr",
+  "lang": "en",
+  "prefer_related_applications": false
+} 
